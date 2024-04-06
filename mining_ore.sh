@@ -3,9 +3,24 @@ while true
 do
   echo "Memulai proses menambang..."
   ore \
-    --rpc https://sleek-shy-telescope.solana-mainnet.quiknode.pro/596d3c4655373d45b0ad337ca2f4b472a68fa96f/ \
+    --rpc https://wandering-wild-wish.solana-mainnet.quiknode.pro/524c88cbb23b7e3e601a73ebee4c92d200482586/ \
     --keypair ~/.config/solana/id.json \
-    --priority-fee 2220000 \
+    --priority-fee 6000000 \
+    mine \
+    --threads 10
+  echo "Proses mining dimuat ulang..."
+  #  Opsional: melakukan delay sleep selama beberapa detik untuk menghindari spam
+  sleep 1
+done
+
+# Infinite loop WQ
+while true
+do
+  echo "Memulai proses menambang..."
+  ore \
+    --rpc https://icy-sly-crater.solana-mainnet.quiknode.pro/bf47408bf17f421ac09b5df89eb6fa7e2189c36a/ \
+    --keypair ~/.config/solana/id.json \
+    --priority-fee 6000000 \
     mine \
     --threads 10
   echo "Proses mining dimuat ulang..."
